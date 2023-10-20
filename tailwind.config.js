@@ -5,7 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode:['class'],
   theme: {
+    screens:{
+      'mobile': {'min': '320px', 'max': '649px'},
+      'tablet':  {'min': '650px', 'max': '768px'},
+      'laptop':  {'min': '769px', 'max': '1024px'},
+      'desktop':  {'min': '1025px'},
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,5 +21,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
