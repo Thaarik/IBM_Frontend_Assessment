@@ -69,7 +69,7 @@ const PRList = () => {
       try {
         if (apiLink) {
           const response = await fetch(
-            `${apiLink}?per_page=2&sort=${sort}&state=${prState}`
+            `${apiLink}?per_page=5&sort=${sort}&state=${prState}`
           );
           if (response.ok) {
             const responseBody = await response.json();
@@ -140,7 +140,7 @@ const PRList = () => {
       ) : (
         <div className="text-center m-3 text-red-600">{prjson.error}</div>
       )}
-      
+
     </div>
   );
 };

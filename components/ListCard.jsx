@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import {BiComment} from "react-icons/bi"
 
 // COmponent to display PR List
 const ListCard = ({ pr }) => {
@@ -17,10 +18,10 @@ const ListCard = ({ pr }) => {
       </div>
       {pr.comment_count !== undefined ? (
         <div className="m-1">
-          <p className="font-bold mobile:text-sm">
-            Number of Comments:
+          <div className="font-bold flex justify-center items-center mobile:text-sm">
+          <BiComment className="mr-2"/>
             <span className="font-semibold">{pr.comment_count}</span>
-          </p>
+          </div>
         </div>
       ) : (
         <div>Loading comment count...</div>
@@ -47,7 +48,7 @@ const ListCard = ({ pr }) => {
 
       <details className=" w-full ">
         <summary className="cursor-pointer text-sm ">
-          click to check the description of the issue
+          click to check the body of the PR issue
         </summary>
         <div className="text-xs text-justify p-3 w-full">{pr.body}</div>
       </details>
