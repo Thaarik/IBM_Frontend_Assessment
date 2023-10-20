@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IBM Frontend Challenge
 
-## Getting Started
+## Project Setup
+### React/Next.js 
+1. Clone this repo: ``` git clone https://github.com/Thaarik/IBM_Frontend_Assessment.git ```
+2. Go to the file directory: ``` cd IBM_Frontend_Assessment ```
+3.  Run the command to install the packages: ``` npm install ```
+4. Next start the frontend service:``` npm run dev ```
+5. The frontend runs in ``` http://localhost:3000  ```
 
-First, run the development server:
+### Built
+1. The project is built using Next.js.
+2. Styling is done using TailwindCSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Information
+1. The project fetches all necessary details in a list of Pull Requests (PR) containing the follwoing details: PR Name, PR Title, PR comment count, Link to the PR and the body of the PR. (Reference: https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#list-pull-requests) 
+2. The styling is done using Tailwind CSS with mobile responsive and dark mode feature.
+3. Proper error handling is maintained throught the application
+4. The number of list if limited to 5 (To keep an eye on the rate limit of 30 Requests/hr)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Light Mode:
+![image](https://github.com/Thaarik/IBM_Frontend_Assessment/assets/52432079/20e7a0b0-f7ff-439d-959b-c89a6f4c2509)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Dark Mode:
+![image](https://github.com/Thaarik/IBM_Frontend_Assessment/assets/52432079/4bc340ce-41a1-4df8-a7c9-f9fe7c2b30c7)
